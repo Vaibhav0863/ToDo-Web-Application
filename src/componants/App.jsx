@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 
+//This App class is used to create list item of the given task
 class App extends Component {
   state = {
-    itemValue: this.props.value
+    itemValue: this.props.value  //With the help of this.props it takes value from list and store it into itemValue variable 
   };
   render() {
     return (
