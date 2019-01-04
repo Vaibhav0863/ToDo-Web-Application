@@ -1,0 +1,27 @@
+.todo-app {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 30%;
+  display: block;
+  width: 550px;
+  background-color: #2d3436;
+  color: whitesmoke;
+
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.form-input {
+  margin-left: 40px;
+}
+#root {
+  background-color: #81ecec;
+  height: 100vh;
+}
+.todo-app > h1 {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.add-btn {
+  position: relative;
+  margin-left: 145px;
+}
