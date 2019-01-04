@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import App from "./App";
+import App from "./App"; //This import App.jsx from componants from which we can use App class 
 import "../todo.css";
 
 class Todo extends Component {
   state = {
-    items: []
-    //itemList: []
+    items: [] //This is used to store list of array in which list contain {id,task}
   };
   render() {
     return (
@@ -17,7 +16,7 @@ class Todo extends Component {
           <input
             className="form-control form-input"
             type="text"
-            ref={a => (this.element = a)}
+            ref={a => (this.element = a)}  //It is used to fetch text from Inpute field
             placeholder="ENTER TASK"
           />
 
@@ -53,9 +52,7 @@ class Todo extends Component {
       value: this.element.value
     };
     let { items } = this.state;
-    //console.log(this.state.items.indexOf(newItem));
     if (this.element.value !== "") {
-      //console.log(newItem.value);
       console.log(items[this.state.items.indexOf(newItem)]);
       this.setState({ item: this.state.items.push(newItem) });
     }
